@@ -1,3 +1,8 @@
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+
+
 img {
   width: 50px;
 }
@@ -8,4 +13,36 @@ img {
 
 .red {
   background-color: red;
+}
+
+main {
+  input[type="password"] {
+    background-color: red;
+  }
+
+  input:nth-child(4) {
+    outline: none;
+    border: none;
+    background-color: papayawhip;
+
+    &:hover {
+      background-color: green;
+    }
+  }
+}
+
+header {
+  nav {
+    @include display-flex;
+  }
+}
+
+main {
+  
+  height: 300px;
+  
+  h1 {
+    margin: 50px 40px 30px 20px;
+    background-color: coral;
+  }
 }

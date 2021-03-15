@@ -1,3 +1,18 @@
+*,
+body,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
 img {
   width: 50px;
 }
@@ -8,5 +23,41 @@ img {
 
 .red {
   background-color: red;
+}
+
+main input[type="password"] {
+  background-color: red;
+}
+
+main input:nth-child(4) {
+  outline: none;
+  border: none;
+  background-color: papayawhip;
+}
+
+main input:nth-child(4):hover {
+  background-color: green;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main {
+  height: 300px;
+}
+
+main h1 {
+  margin: 50px 40px 30px 20px;
+  background-color: coral;
 }
 /*# sourceMappingURL=style.css.map */
